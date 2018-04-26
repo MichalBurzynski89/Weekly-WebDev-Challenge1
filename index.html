@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Weekly WebDev Challenge 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michał Burzyński">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=latin-ext" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-top.png" alt="masteralb logo" class="logo logo-top">
+    </header>
+
+    <main>
+        <section class="col col-left">
+            <form class="form form-reg">
+                <h2>Register Form</h2>
+
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="data username">
+                            <label for="name"> <!-- <img src="images/user.png" alt="user photo icon"> --> </label>
+                            <input type="text" id="name" name="user_name" placeholder="Username" required>
+                        </div>
+
+                        <div class="data password">
+                            <label for="pwd"> <!-- <img src="images/lock.png" alt="lock icon"> --> </label>
+                            <input type="password" id="pwd" name="user_password" placeholder="Password" required>
+                        </div>
+
+                        <div class="data password password-confirm">
+                            <label for="pwd-confirm"> <!-- <img src="images/lock.png" alt="lock icon"> --> </label>
+                            <input type="password" id="pwd-confirm" name="user_password_confirm" placeholder="Confirm Password" required>
+                        </div>
+
+                        <div class="data email">
+                            <label for="email"> <!-- <img src="images/email.png" alt="mail icon"> --> </label>
+                            <input type="email" id="email" name="user_email" placeholder="Email" required>
+                        </div>
+
+                        <div class="data location">
+                            <label for="location"> <!-- <img src="images/location.png" alt="spot icon"> --> </label>
+                            <!-- <input type="text" id="location" name="user_location" placeholder="Your Location"> -->
+                            <select id="location" name="user_location" required="">
+                                <option value="" disabled="" selected="">Your Location</option>
+                                <option value="warsaw">Warsaw</option>
+                                <option value="berlin">Berlin</option>
+                                <option value="paris">Paris</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="london">London</option>
+                            </select>
+                            <!-- <img src="images/arrow.png" alt="arrow icon for dropdown list"> -->
+                        </div>
+
+                        <div class="terms">
+                            <label for="terms-of-use">
+                                <input type="checkbox" id="terms-of-use" name="terms_of_use" required>I have read and accept the terms of use.
+                            </label>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="button button-sign-up">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form send-email">
+                <h2>Send Email</h2>
+
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="data username">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="your_name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="data email">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="your_email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="data your-msg">
+                            <label for="msg"></label>
+                            <textarea id="msg" name="your_message" placeholder="Type your message..." required></textarea>
+                        </div>
+
+                        <div class="copy-to-email">
+                            <label for="copy-to-email">
+                                <input type="checkbox" id="copy-to-email" name="copy_to_email">Send a copy to my Email
+                            </label>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="button button-send-email">Send Email</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="col col-right">
+            <form class="form form-sign-in">
+                <h2>Sign In Form</h2>
+
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="data username">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="user_name" placeholder="Username" required>
+                        </div>
+
+                        <div class="data password">
+                            <label for="pwd"></label>
+                            <input type="password" id="pwd" name="user_password" placeholder="Password" required>
+                        </div>
+
+                        <div class="remember-me">
+                            <label for="remember-me">
+                                <input type="checkbox" id="remember-me" name="remember_me">Remember me
+                            </label>
+
+                            <div class="button">
+                                <button type="submit" class="button button-sign-in">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form form-recover">
+                <h2>Recover Form</h2>
+
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="data email">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="your_email" placeholder="Enter your Email" required>
+                        </div>
+
+                        <div class="data phone-number">
+                            <label for="phone-number"></label>
+                            <input type="tel" id="phone-number" name="your_phone_number" placeholder="Enter your Phone number" required>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="button button-send">Send</button>
+                            <button type="button" class="button button-done">Done</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form form-subscribe">
+                <h2>Subscribe Form</h2>
+
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="data email">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="your_email" placeholder="Enter your Email" required>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="button button-subscribe">Subscribe</button>
+                            <button type="button" class="button button-no">No, Thanks</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <footer>
+                <img src="images/logo-bottom.png" alt="masteralb logo" class="logo logo-bottom">
+            </footer>
+        </section>
+    </main>
+
+</body>
+
+</html>

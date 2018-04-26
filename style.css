@@ -1,0 +1,447 @@
+/***** RESET *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/***** GENERAL STYLING *****/
+
+body {
+    position: relative;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    opacity: 0.3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /*position: absolute;
+    left: 50%;
+    transform: translate(-50%);*/
+    margin-top: 25px;
+}
+
+h2 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.col {
+    float: left;
+}
+
+.col-left {
+    margin-right: 40px;
+}
+
+.col-right {
+    margin-left: 40px;
+}
+
+form.form {
+    width: 420px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    border: 20px solid rgba(0, 0, 0, .3);
+    border-radius: 6px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.data {
+    margin-bottom: 20px;
+}
+
+footer {
+    /*position: absolute;
+    top: 72em;
+    right: 33em;*/
+    opacity: 0.3;
+    text-align: center;
+}
+
+/***** TEXT FIELDS *****/
+
+input,
+select {
+    padding: 10px 0 10px 0;
+    text-indent: 5rem;
+    font-size: 0.9rem;
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 15.5em;
+    font-size: 0.9rem;
+    resize: none;
+    text-indent: 5%;
+    padding: 0.75em 0 0.75em 0;
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+}
+
+select option {
+    color: rgb(0, 0, 0);
+}
+
+input:active,
+input:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus {
+    border: 1.25px solid green;
+}
+
+/***** ICONS *****/
+
+.username input {
+    background: url(images/user.png) no-repeat 5%;
+}
+
+.password input {
+    background: url(images/lock.png) no-repeat 5%;
+}
+
+.email input {
+    background: url(images/email.png) no-repeat 4.75%;
+}
+
+.phone-number input {
+    background: url(images/phone.png) no-repeat 6%;
+}
+
+.location select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url(images/location.png) no-repeat 6%, url(images/arrow.png) no-repeat 95%;
+    color: rgb(100, 100, 100);
+}
+
+.username label,
+.password label,
+.email label,
+.phone-number label,
+.location label {
+    position: relative;
+}
+
+.username label::after,
+.password label::after,
+.email label::after,
+.phone-number label::after,
+.location label::after {
+    content: '';
+    position: absolute;
+    top: -.25rem;
+    left: 3.75rem;
+    height: 150%;
+    border-right: 1px solid #c6c6c6;
+}
+
+/***** CHECKBOXES *****/
+
+.terms label,
+.copy-to-email label,
+.remember-me label {
+    color: rgb(100, 100, 100);
+    opacity: 0.9;
+    position: relative;
+    top: -0.25em;
+    left: 2.5em;
+    font-size: 1em;
+}
+
+.terms label input,
+.copy-to-email label input,
+.remember-me label input {
+    position: absolute;
+    top: -0.25em;
+    left: -2.75em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 1.75em;
+    height: 1.75em;
+    border: 1px solid rgba(100, 100, 100, .5);
+    border-radius: 5px;
+}
+
+.terms label input:checked,
+.copy-to-email label input:checked,
+.remember-me label input:checked {
+    background: url(images/check.png) no-repeat center;
+}
+
+/***** BUTTONS *****/
+
+/*** REGISTER & SEND EMAIL FORMS ***/
+
+.button-sign-up,
+.button-send-email {
+    margin-top: 0.5em;
+    width: 100%;
+    height: 2.2em;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    background: -webkit-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: -moz-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: -ms-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: linear-gradient(top, #a0d63c 0%, #80c420 100%);
+}
+
+/*** HOVER EFFECTS ***/
+
+.button-sign-up:hover,
+.button-send-email:hover,
+.button-sign-in:hover,
+.button-send:hover,
+.button-subscribe:hover {
+    background: -webkit-linear-gradient(bottom, #a0d63c 0%, #80c420 100%);
+    background: -moz-linear-gradient(bottom, #a0d63c 0%, #80c420 100%);
+    background: -ms-linear-gradient(bottom, #a0d63c 0%, #80c420 100%);
+    background: linear-gradient(bottom, #a0d63c 0%, #80c420 100%);
+}
+
+.button-done:hover {
+    background: -webkit-linear-gradient(bottom, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    background: -moz-linear-gradient(bottom, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    background: -ms-linear-gradient(bottom, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    background: linear-gradient(bottom, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+}
+
+.button-no:hover {
+    background: -webkit-linear-gradient(bottom, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    background: -moz-linear-gradient(bottom, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    background: -ms-linear-gradient(bottom, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    background: linear-gradient(bottom, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+}
+
+/*** SIGN IN FORM ***/
+
+.remember-me {
+    position: relative;
+    top: 0.5em;
+    padding-bottom: 1.25em;
+}
+
+.remember-me .button {
+    position: absolute;
+    left: 5.12em;
+    top: -0.5em;
+    width: 65%;
+}
+
+.button-sign-in {
+    height: 2em;
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: -moz-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: -ms-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: linear-gradient(top, #a0d63c 0%, #80c420 100%);
+}
+
+/*** RECOVER & SUBSCRIBE FORMS ***/
+
+.button-send,
+.button-done,
+.button-subscribe,
+.button-no {
+    width: 44%;
+    height: 2em;
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.button-send,
+.button-subscribe {
+    margin-right: 10.79%;
+    background: -webkit-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: -moz-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: -ms-linear-gradient(top, #a0d63c 0%, #80c420 100%);
+    background: linear-gradient(top, #a0d63c 0%, #80c420 100%);
+}
+
+.button-done {
+    background: -webkit-linear-gradient(top, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    background: -moz-linear-gradient(top, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    background: -ms-linear-gradient(top, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    background: linear-gradient(top, rgb(198, 224, 165) 0%, rgb(172, 209, 131) 100%);
+    border-color: rgb(110, 205, 117);
+}
+
+.button-no {
+    background: -webkit-linear-gradient(top, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    background: -moz-linear-gradient(top, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    background: -ms-linear-gradient(top, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    background: linear-gradient(top, rgb(246, 94, 111) 0%, rgb(241, 56, 72) 100%);
+    border-color: rgb(152, 56, 66);
+}
+
+/***** --- MEDIA QUERIES --- *****/
+
+@media screen and (max-width: 940px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    header img.logo-top {
+        width: 85%;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    form.form {
+        width: 380px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.8em;
+    }
+
+    .username input,
+    .password input,
+    .email input {
+        background-size: 7%;
+        background-position: 6%;
+    }
+
+    .phone-number input,
+    .location select {
+        background-size: 5%;
+        background-position: 7%;
+    }
+
+    .terms label,
+    .copy-to-email label,
+    .remember-me label {
+        font-size: 0.9em;
+    }
+
+    button.button {
+        font-size: 1.1em;
+    }
+
+    .button-send,
+    .button-done,
+    .button-subscribe,
+    .button-no {
+        width: 43%;
+    }
+
+    .button-send,
+    .button-subscribe {
+        margin-right: 12.6%
+    }
+
+    footer img.logo-bottom {
+        width: 77.5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .col-right .form {
+        margin-left: 5.5%;
+    }
+
+    form.form {
+        width: 320px;
+    }
+
+    .username input,
+    .password input,
+    .email input {
+        background-position: 9%;
+    }
+
+    .phone-number input,
+    .location select {
+        background-position: 10%;
+    }
+
+    .terms label,
+    .copy-to-email label,
+    .remember-me label {
+        font-size: 0.75em;
+    }
+
+    .terms label input,
+    .copy-to-email label input,
+    .remember-me label input {
+        width: 2em;
+    }
+
+    .remember-me .button {
+        left: 4.12em;
+        top: -0.3em;
+    }
+
+    .button-send,
+    .button-done,
+    .button-subscribe,
+    .button-no {
+        width: 42%;
+    }
+
+    .button-send,
+    .button-subscribe {
+        margin-right: 14.2%
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .col-right .form {
+        margin: 0;
+    }
+}
