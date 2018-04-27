@@ -391,29 +391,25 @@ textarea:focus {
 }
 
 @media screen and (max-width: 400px) {
-    .col-right .form {
-        margin-left: 5.5%;
-    }
-
     form.form {
-        width: 320px;
+        width: 360px;
     }
 
     .username input,
     .password input,
     .email input {
-        background-position: 9%;
+        background-position: 7.5%;
     }
 
     .phone-number input,
     .location select {
-        background-position: 10%;
+        background-position: 8.25%;
     }
 
     .terms label,
     .copy-to-email label,
     .remember-me label {
-        font-size: 0.75em;
+        font-size: 0.82em;
     }
 
     .terms label input,
@@ -423,8 +419,8 @@ textarea:focus {
     }
 
     .remember-me .button {
-        left: 4.12em;
-        top: -0.3em;
+        left: 4.8em;
+        top: -0.4em;
     }
 
     .button-send,
@@ -437,11 +433,5 @@ textarea:focus {
     .button-send,
     .button-subscribe {
         margin-right: 14.2%
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .col-right .form {
-        margin: 0;
     }
 }
