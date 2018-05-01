@@ -317,6 +317,19 @@ textarea:focus {
     border-color: rgb(152, 56, 66);
 }
 
+/***** --- FIREFOX FIXES --- *****/
+
+@-moz-document url-prefix() {
+    select {
+        text-indent: 2.4rem;
+    }
+
+    .button-send,
+    .button-subscribe {
+        margin-right: 10.78%;
+    }
+}
+
 /***** --- MEDIA QUERIES --- *****/
 
 @media screen and (max-width: 940px) {
